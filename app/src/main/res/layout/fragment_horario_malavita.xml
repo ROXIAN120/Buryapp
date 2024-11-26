@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/diseno_pantalla_de_horario"
+    tools:context="com.example.partyapp8.fragmentos_de_locales.barfragment.contenido_malavita.HorarioMalavitaFragment">
+
+    <!-- Este TextView está centrado en el layout -->
+
+    <TextView
+        android:id="@+id/horario_malavita"
+        android:layout_width="241dp"
+        android:layout_height="292dp"
+        android:fontFamily="@font/font2"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="14.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <Button
+        android:id="@+id/button_cerrar"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:background="@drawable/button_1"
+        android:fontFamily="@font/font2"
+        android:text="@string/button_x"
+        android:textColor="#FFFFFF"
+        android:textSize="14.5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/horario_malavita"
+        app:layout_constraintEnd_toEndOf="@+id/horario_malavita"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/horario_malavita"
+        app:layout_constraintTop_toTopOf="@+id/horario_malavita"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <!-- Añade más vistas aquí, asegurándote de que tengan las restricciones necesarias -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

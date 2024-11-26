@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para textos con un tamaño de 17sp, color blanco y sombra azul -->
+    <style name="elige_otro_">
+        <item name="android:textSize">17sp</item> <!-- Tamaño de texto de 17sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:shadowColor">#3503FF</item> <!-- Color de sombra azul -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+    </style>
+
+    <!-- Estilo para textos con un tamaño de 15sp, color blanco y sombra azul -->
+    <style name="elige_otro2_">
+        <item name="android:textSize">15sp</item> <!-- Tamaño de texto de 15sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:shadowColor">#3503FF</item> <!-- Color de sombra azul -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+    </style>
+
+    <!-- Estilo para textos con un tamaño de 13sp, color blanco y sombra azul -->
+    <style name="elige_otro3_">
+        <item name="android:textSize">13sp</item> <!-- Tamaño de texto de 13sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:shadowColor">#3503FF</item> <!-- Color de sombra azul -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+    </style>
+
+    <!-- Estilo para textos con fuente personalizada, sombra azul y fondo personalizado -->
+    <style name="apariencia_de_item_text">
+        <item name="android:textSize">13sp</item> <!-- Tamaño de texto de 13sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:fontFamily">@font/font2</item> <!-- Fuente personalizada -->
+        <item name="android:shadowColor">#00CDFA</item> <!-- Color de sombra azul claro -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+    </style>
+
+    <!-- Estilo para textos con fuente personalizada, tamaño mayor y fondo personalizado -->
+    <style name="apariencia_de_item_text2">
+        <item name="android:textSize">18sp</item> <!-- Tamaño de texto de 18sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:fontFamily">@font/font2</item> <!-- Fuente personalizada -->
+        <item name="android:shadowColor">#3503FF</item> <!-- Color de sombra azul -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+        <item name="background">@drawable/button_4</item> <!-- Fondo personalizado -->
+    </style>
+
+    <!-- Estilo para nombres de locales con texto pequeño, color blanco y sombra azul claro -->
+    <style name="style_nombres_de_locales">
+        <item name="android:textSize">11sp</item> <!-- Tamaño de texto de 11sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:shadowColor">#00CDFA</item> <!-- Color de sombra azul claro -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+    </style>
+
+    <!-- Estilo para la barra de búsqueda en RecyclerView -->
+    <style name="style_barra_de_busqueda">
+        <item name="android:textSize">11sp</item> <!-- Tamaño de texto de 11sp -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Color de texto blanco -->
+        <item name="android:shadowColor">#3503FF</item> <!-- Color de sombra azul -->
+        <item name="android:shadowDx">0</item> <!-- Desplazamiento en X de la sombra -->
+        <item name="android:shadowDy">0</item> <!-- Desplazamiento en Y de la sombra -->
+        <item name="android:shadowRadius">10</item> <!-- Radio de desenfoque de la sombra -->
+    </style>
+
+    <!-- Tema principal de la aplicación sin ActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+    </style>
+
+    <!-- Tema de la pantalla de splash -->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/azul</item> <!-- Fondo de pantalla azul -->
+    </style>
+
+</resources>

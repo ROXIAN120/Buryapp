@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.partyapp8.fragments.home.BarFragment"
+        android:label="@string/menu_bar"
+        tools:layout="@layout/fragment_bar">
+        <action
+            android:id="@+id/action_nav_home_to_nav_resto_bar"
+            app:destination="@id/nav_resto_bar" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_discoteca"
+            app:destination="@id/nav_discoteca" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_malavita"
+            app:destination="@id/nav_malavita"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_recyclerview"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_recyclerview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_recyclerview"
+        android:name="com.example.filtrador_buscador_kotlin.RecyclerviewFragment"
+        android:label="@string/menu_bar"
+        tools:layout="@layout/barra_de_navegacion">
+
+        <action
+            android:id="@+id/action_nav_recyclerview_to_nav_malavita"
+            app:destination="@id/nav_malavita" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_resto_bar"
+        android:name="com.example.partyapp8.fragments.restobar.RestoBarFragment"
+        android:label="@string/menu_restobar"
+        tools:layout="@layout/fragment_resto_bar">
+        <action
+            android:id="@+id/action_nav_resto_bar_to_nav_discoteca"
+            app:destination="@id/nav_discoteca" />
+        <action
+            android:id="@+id/action_nav_resto_bar_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_resto_bar_to_nav_recyclerview"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_recyclerview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_discoteca"
+        android:name="com.example.partyapp8.fragments.discoteca.DiscotecaFragment"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_discoteca">
+        <action
+            android:id="@+id/action_nav_discoteca_to_nav_resto_bar"
+            app:destination="@id/nav_resto_bar" />
+        <action
+            android:id="@+id/action_nav_discoteca_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_discoteca_to_nav_recyclerview"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_recyclerview" />
+        <action
+            android:id="@+id/action_nav_discoteca_to_nav_vermont"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/nav_vermont" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_malavita"
+        android:name="com.example.partyapp8.fragmentos_de_locales.barfragment.contenido_malavita.MalavitaFragment"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_malavita">
+        <action
+            android:id="@+id/action_nav_malavita_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_malavita_pop"
+            app:popUpTo="@id/nav_malavita"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_malavita_to_nav_menu_malavita"
+            app:destination="@id/nav_menu_malavita"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_nav_malavita_to_nav_reserva_malavita"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_reserva_malavita" />
+        <action
+            android:id="@+id/action_nav_malavita_to_nav_mesas_malavita"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_mesas_malavita" />
+        <action
+            android:id="@+id/action_nav_malavita_to_nav_enventos_malavita"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_enventos_malavita" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_menu_malavita"
+        android:name="com.example.partyapp8.fragmentos_de_locales.barfragment.contenido_malavita.MenuMalavita"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_menu_malavita">
+        <action
+            android:id="@+id/action_nav_menu_malavita_to_nav_malavita"
+            app:destination="@id/nav_malavita"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_menu_malavita_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_reserva_malavita"
+        android:name="com.example.partyapp8.fragments.restobar.ReservaMalavita"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_malavita_reserva">
+
+        <action
+            android:id="@+id/action_nav_reserva_malavita_to_nav_malavita"
+            app:destination="@id/nav_malavita" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mesas_malavita"
+        android:name="com.example.partyapp8.fragmentos_de_locales.barfragment.contenido_malavita.MesasMalavitaFragment"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_mesas_malavita">
+
+        <action
+            android:id="@+id/action_nav_mesas_malavita_to_nav_reserva_malavita"
+            app:destination="@id/nav_reserva_malavita"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vermont"
+        android:name="com.example.partyapp8.fragmentos_de_locales.discotecafragment.contenido_vermont.VermontFragment"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_vermont">
+        <action
+            android:id="@+id/action_nav_vermont_to_nav_vermont_menu"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_vermont_menu" />
+        <action
+            android:id="@+id/action_nav_vermont_to_nav_vermont_mesas"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_vermont_mesas" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_vermont_menu"
+        android:name="com.example.partyapp8.fragmentos_de_locales.discotecafragment.contenido_vermont.MenuVermont"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_vermont_menu"/>
+    <fragment
+        android:id="@+id/nav_vermont_mesas"
+        android:name="com.example.partyapp8.fragmentos_de_locales.discotecafragment.contenido_vermont.MesasVermontFragment"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_vermont_mesa">
+        <action
+            android:id="@+id/action_nav_vermont_mesas_to_nav_vermont_reserva"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:destination="@id/nav_vermont_reserva" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_vermont_reserva"
+        android:name="com.example.partyapp8.fragments.restobar.ReservaVermont"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_vermont_reserva"/>
+    <fragment
+        android:id="@+id/nav_enventos_malavita"
+        android:name="com.example.partyapp8.fragmentos_de_locales.barfragment.contenido_malavita.EventosMalavitaFragment"
+        android:label="@string/menu_discoteca"
+        tools:layout="@layout/fragment_malavita_eventos"/>
+</navigation>

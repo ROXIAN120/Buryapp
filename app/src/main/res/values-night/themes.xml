@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Partyapp7" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Main theme for the application -->
+    <style name="Theme.PROYECTOFINAL" parent="Base.Theme.Partyapp7" />
+
+    <!-- No ActionBar theme, extends the main theme -->
+    <style name="Theme.PROYECTOFINAL.NoActionBar" parent="Theme.PROYECTOFINAL">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- AppBar overlay theme -->
+    <style name="Theme.PROYECTOFINAL.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Popup overlay theme -->
+    <style name="Theme.PROYECTOFINAL.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

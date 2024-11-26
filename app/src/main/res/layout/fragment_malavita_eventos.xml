@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantilla_bury_app">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fondo_de_publicidad"
+            android:layout_width="363dp"
+            android:layout_height="762dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:contentDescription="@string/ImagenView_description_fondo_de_malavita"
+            android:src="@drawable/fondo_de_publicidad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="328dp"
+        android:layout_height="371dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_publicidad"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_publicidad"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_publicidad"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_publicidad" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="337dp"
+            android:layout_height="67dp"
+            android:background="@drawable/barra_para_titulo"
+            android:fontFamily="@font/font2"
+            android:paddingStart="115dp"
+            android:paddingTop="11dp"
+            android:paddingEnd="10dp"
+            android:text="@string/Button_eventos"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@+id/viewPager2"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_de_publicidad"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="@+id/fondo_de_publicidad"
+            app:layout_constraintTop_toTopOf="@+id/fondo_de_publicidad"
+            app:layout_constraintVertical_bias="0.247" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

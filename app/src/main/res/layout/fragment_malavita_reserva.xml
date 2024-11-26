@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantilla_bury_app">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="308dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027">
+
+        <TextView
+            android:id="@+id/titulo_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_Nombre_Apellido"
+            android:textColor="#FFFF" />
+
+        <EditText
+            android:id="@+id/nombre_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/punto"
+            android:inputType="text"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/titulo_cantidad_de_personas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_Numero_de_personas"
+            android:textColor="#FFFF" />
+
+        <EditText
+            android:id="@+id/cantidad_de_personas"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:autofillHints="number"
+            android:ems="10"
+            android:hint="@string/punto"
+            android:inputType="number"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/titulo_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_fecha"
+            android:textColor="#FFFF" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints="date"
+            android:ems="10"
+            android:hint="@string/punto"
+            android:inputType="text"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/titulo_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_hora"
+            android:textColor="#FFFF" />
+
+        <EditText
+            android:id="@+id/editText_hora"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:autofillHints="time"
+            android:ems="10"
+            android:hint="@string/punto"
+            android:inputType="time|datetime"
+            android:textColor="#FFFF" />
+
+        <Button
+            android:id="@+id/button_reserva"
+            android:layout_width="166dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="65dp"
+            android:background="@drawable/button_3"
+            android:fontFamily="@font/font2"
+            android:text="@string/Button_enviar"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

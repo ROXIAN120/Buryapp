@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datos_personales"
+            android:icon="@drawable/icon_datos_personales"
+            android:title="@string/menu_datos_personales" />
+        <item
+            android:id="@+id/nav_ayuda_online"
+            android:icon="@drawable/icon_ayuda_online"
+            android:title="@string/menu_ayuda_online" />
+
+
+    </group>
+    <item android:title="Configuracion">
+        <menu>
+            <item
+                android:id="@+id/nav_notificaciones"
+                android:icon="@drawable/icon_notificacion"
+                android:title="@string/menu_notificaciones" />
+            <item
+                android:id="@+id/nav_informacion_legal"
+                android:icon="@drawable/icon_informacion_legal"
+                android:title="@string/menu_Informacion_legal" />
+            <item
+                android:id="@+id/nav_lugares_favoritos"
+                android:icon="@drawable/icon_corazon"
+                android:title="@string/menu_Lugares_favoritos" />
+        </menu>
+    </item>
+    <item
+        android:title="Beneficio">
+        <menu>
+            <item
+                android:id="@+id/nav_invitar_amigos"
+                android:icon="@drawable/icon_regalo"
+                android:title="@string/menu_invitar_amigos" />
+            <item
+                android:id="@+id/nav_cerrarsesion"
+                android:icon="@drawable/icon_cerrar_sesion"
+                android:title="@string/menu_cerrar_sesion" />
+        </menu>
+    </item>
+</menu>

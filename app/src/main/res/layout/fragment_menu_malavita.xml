@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantilla_bury_app">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/imagen_malavita"
+            android:layout_width="293dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/barra_para_titulo"
+            android:fontFamily="@font/font2"
+            android:paddingStart="99dp"
+            android:paddingEnd="50dp"
+            android:text="@string/Titulo_malavita"
+            android:textAppearance="@style/elige_otro2_"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.017" />
+
+        <TextView
+            android:id="@+id/textView_shots"
+            android:layout_width="167dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_shots_tragos"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_shots_tragos"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_shots_tragos"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="@+id/fondo_shots_tragos"
+            app:layout_constraintTop_toTopOf="@+id/fondo_shots_tragos"
+            app:layout_constraintVertical_bias="0.129" />
+
+        <TextView
+            android:id="@+id/textView_precio"
+            android:layout_width="73dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_precio"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_shots_tragos"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_shots_tragos"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="@+id/fondo_shots_tragos"
+            app:layout_constraintTop_toTopOf="@+id/fondo_shots_tragos"
+            app:layout_constraintVertical_bias="0.133" />
+
+        <ImageView
+            android:id="@+id/fondo_shots_tragos"
+            android:layout_width="321dp"
+            android:layout_height="211dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/ImagenView_description_fondo_de_malavita"
+            android:src="@drawable/fondo_para_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagen_malavita"
+            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView_vasos_ceberbezas"
+            android:layout_width="201dp"
+            android:layout_height="34dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_vasos_y_cerbeza"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/textView_precio2"
+            android:layout_width="73dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_precio"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintVertical_bias="0.044" />
+
+        <ImageView
+            android:id="@+id/fondo_vasos_cerbezas"
+            android:layout_width="323dp"
+            android:layout_height="372dp"
+            android:contentDescription="@string/ImagenView_description_fondo_de_malavita"
+            android:src="@drawable/fondo_para_menu2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondo_shots_tragos"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/fondo_botellas"
+            android:layout_width="323dp"
+            android:layout_height="372dp"
+            android:contentDescription="@string/ImagenView_description_fondo_de_malavita"
+            android:src="@drawable/fondo_para_menu2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintVertical_bias="0.021" />
+        <TextView
+            android:id="@+id/textView_botellas"
+            android:layout_width="201dp"
+            android:layout_height="34dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_botellas"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_botellas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_botellas"
+            app:layout_constraintHorizontal_bias="0.078"
+            app:layout_constraintStart_toStartOf="@+id/fondo_botellas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_botellas"
+            app:layout_constraintVertical_bias="0.041" />
+        <TextView
+            android:id="@+id/textView_precio4"
+            android:layout_width="73dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_precio"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_botellas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_botellas"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="@+id/fondo_botellas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_botellas"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/fondo_baldes"
+            android:layout_width="322dp"
+            android:layout_height="218dp"
+            android:contentDescription="@string/ImagenView_description_fondo_de_malavita"
+            android:src="@drawable/fondo_para_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondo_botellas"
+            app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/textView_baldes"
+            android:layout_width="167dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_baldes"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_baldes"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_baldes"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="@+id/fondo_baldes"
+            app:layout_constraintTop_toTopOf="@+id/fondo_baldes"
+            app:layout_constraintVertical_bias="0.129" />
+
+        <TextView
+            android:id="@+id/textView_precio3"
+            android:layout_width="73dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_precio"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_baldes"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_baldes"
+            app:layout_constraintHorizontal_bias="0.962"
+            app:layout_constraintStart_toStartOf="@+id/fondo_baldes"
+            app:layout_constraintTop_toTopOf="@+id/fondo_baldes"
+            app:layout_constraintVertical_bias="0.133" />
+
+
+        <ImageView
+            android:id="@+id/fondo_sin_alcohol"
+            android:layout_width="321dp"
+            android:layout_height="211dp"
+            android:contentDescription="@string/ImagenView_description_fondo_de_malavita"
+            android:src="@drawable/fondo_para_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondo_baldes" />
+
+        <TextView
+            android:id="@+id/textView_sin_alcohol"
+            android:layout_width="167dp"
+            android:layout_height="33dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_sin_alcohol"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintTop_toTopOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <TextView
+            android:id="@+id/textView_precio5"
+            android:layout_width="73dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/font2"
+            android:text="@string/TextView_precio"
+            android:textAppearance="@style/elige_otro_"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintHorizontal_bias="0.966"
+            app:layout_constraintStart_toStartOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintTop_toTopOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintVertical_bias="0.01" />
+
+
+
+        <TextView
+            android:id="@+id/textview_shots_tragos"
+            android:layout_width="255dp"
+            android:layout_height="84dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_shots_tragos"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_shots_tragos"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="@+id/fondo_shots_tragos"
+            app:layout_constraintTop_toTopOf="@+id/fondo_shots_tragos"
+            app:layout_constraintVertical_bias="0.477" />
+
+        <TextView
+            android:id="@+id/textview_precios_de_shots_tragos"
+            android:layout_width="46dp"
+            android:layout_height="84dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_shots_tragos"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_shots_tragos"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="@+id/fondo_shots_tragos"
+            app:layout_constraintTop_toTopOf="@+id/fondo_shots_tragos"
+            app:layout_constraintVertical_bias="0.485" />
+
+        <TextView
+            android:id="@+id/textview_precios_de_vasos_cerbezas"
+            android:layout_width="50dp"
+            android:layout_height="258dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintVertical_bias="0.461" />
+
+        <TextView
+            android:id="@+id/textview_de_vasos_cerbezas"
+            android:layout_width="252dp"
+            android:layout_height="259dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintHorizontal_bias="0.171"
+            app:layout_constraintStart_toStartOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_vasos_cerbezas"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <TextView
+            android:id="@+id/textview_bottellas"
+            android:layout_width="252dp"
+            android:layout_height="259dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_botellas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_botellas"
+            app:layout_constraintHorizontal_bias="0.211"
+            app:layout_constraintStart_toStartOf="@+id/fondo_botellas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_botellas"
+            app:layout_constraintVertical_bias="0.522" />
+
+        <TextView
+            android:id="@+id/textview_precio_de_botellas"
+            android:layout_width="66dp"
+            android:layout_height="259dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_botellas"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_botellas"
+            app:layout_constraintHorizontal_bias="0.988"
+            app:layout_constraintStart_toStartOf="@+id/fondo_botellas"
+            app:layout_constraintTop_toTopOf="@+id/fondo_botellas"
+            app:layout_constraintVertical_bias="0.522" />
+
+        <TextView
+            android:id="@+id/textview_baldes"
+            android:layout_width="265dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_baldes"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_baldes"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/fondo_baldes"
+            app:layout_constraintTop_toTopOf="@+id/fondo_baldes"
+            app:layout_constraintVertical_bias="0.492" />
+
+        <TextView
+            android:id="@+id/textview_precio_de_baldes"
+            android:layout_width="43dp"
+            android:layout_height="76dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_baldes"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_baldes"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="@+id/fondo_baldes"
+            app:layout_constraintTop_toTopOf="@+id/fondo_baldes"
+            app:layout_constraintVertical_bias="0.485" />
+
+        <TextView
+            android:id="@+id/textview_sin_alcohol"
+            android:layout_width="265dp"
+            android:layout_height="80dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintTop_toTopOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintVertical_bias="0.492" />
+
+        <TextView
+            android:id="@+id/textview_precio_de_sin_alcohol"
+            android:layout_width="38dp"
+            android:layout_height="82dp"
+            android:text=""
+            android:textAppearance="@style/apariencia_de_item_text"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintStart_toStartOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintTop_toTopOf="@+id/fondo_sin_alcohol"
+            app:layout_constraintVertical_bias="0.496" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="363dp"
+            android:layout_height="159dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.224"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/progressbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color negro sólido -->
+    <color name="black">#FF000000</color>
+
+    <!-- Color blanco sólido -->
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Color azul oscuro personalizado -->
+    <color name="azul">#04080f</color>
+
+    <!-- Color negro con 90% de transparencia -->
+    <color name="black_transparent_90">#E6000000</color>
+
+    <!-- Color negro con casi completa transparencia (98.8%) -->
+    <color name="transparet_100">#03000000</color>
+</resources>

@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="328dp"
+        android:layout_height="371dp"
+        android:scaleType="centerCrop"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/no_internet_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/error_de_conexion"
+        android:visibility="gone"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>

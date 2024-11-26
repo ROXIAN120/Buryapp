@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantilla_bury_app"
+    tools:context="fragments.restobar.RestoBarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/barra_de_navegacion"
+            android:layout_width="247dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/recyclerview2"
+            android:ems="10"
+            android:hint="@string/Barra_de_busqueda"
+            android:paddingStart="100dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:textAppearance="@style/style_barra_de_busqueda"
+            android:textColorHint="#FFFFFF"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/fondo_restobar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258" />
+        <ImageView
+            android:id="@+id/fondo_bar"
+            android:layout_width="106dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/decription_fondo_de_bares"
+            android:src="@drawable/fondo_bar_restobar_discoteca"
+            app:layout_constraintBottom_toTopOf="@+id/fondo"
+            app:layout_constraintEnd_toStartOf="@+id/fondo_restobar"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <ImageView
+            android:id="@+id/fondo_restobar"
+            android:layout_width="105dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="90dp"
+            android:contentDescription="@string/decription_fondo_de_bares"
+            android:src="@drawable/fondo_blanco_bar_restobar_discoteca"
+            app:layout_constraintBottom_toTopOf="@+id/fondo3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.222" />
+
+        <ImageView
+            android:id="@+id/fondo_discoteca"
+            android:layout_width="103dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/decription_fondo_de_bares"
+            android:src="@drawable/fondo_bar_restobar_discoteca"
+            app:layout_constraintBottom_toTopOf="@+id/fondo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toEndOf="@+id/fondo_restobar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125" />
+
+        <TextView
+            android:id="@+id/bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_bar"
+            android:fontFamily="@font/font2"
+            android:textAppearance="@style/elige_otro2_"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_bar"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_bar"
+            app:layout_constraintStart_toStartOf="@+id/fondo_bar"
+            app:layout_constraintTop_toTopOf="@+id/fondo_bar" />
+
+        <TextView
+            android:id="@+id/resto_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_resto_bar"
+            android:textAppearance="@style/elige_otro2_"
+            android:fontFamily="@font/font2"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_restobar"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_restobar"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/fondo_restobar"
+            app:layout_constraintTop_toTopOf="@+id/fondo_restobar" />
+
+        <TextView
+            android:id="@+id/discoteca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_discoteca"
+            android:textAppearance="@style/elige_otro2_"
+            android:fontFamily="@font/font2"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo_discoteca"
+            app:layout_constraintEnd_toEndOf="@+id/fondo_discoteca"
+            app:layout_constraintStart_toStartOf="@+id/fondo_discoteca"
+            app:layout_constraintTop_toTopOf="@+id/fondo_discoteca" />
+
+
+        <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fondo3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <ImageView
+        android:id="@+id/fondo2"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/fondo3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ImageView
+        android:id="@+id/fondo3"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ImageView
+        android:id="@+id/fondo4"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fondo5"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo5"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo6"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fondo5"
+        app:layout_constraintTop_toBottomOf="@+id/fondo2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo7"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fondo8"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo8"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo5"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/fondo9"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fondo8"
+        app:layout_constraintTop_toBottomOf="@+id/fondo6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fondo10"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fondo11"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo7"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/fondo11"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo8"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/fondo12"
+        android:layout_width="105dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/decription_fondo_de_imagenes"
+        android:src="@drawable/fondo_de_imagenes_de_locales"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fondo11"
+        app:layout_constraintTop_toBottomOf="@+id/fondo9"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:id="@+id/fondo13"
+            android:layout_width="105dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/decription_fondo_de_imagenes"
+            android:src="@drawable/fondo_de_imagenes_de_locales"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fondo14"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondo10"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/fondo14"
+            android:layout_width="105dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginBottom="84dp"
+            android:contentDescription="@string/decription_fondo_de_imagenes"
+            android:src="@drawable/fondo_de_imagenes_de_locales"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondo11"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/fondo15"
+            android:layout_width="105dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="104dp"
+            android:contentDescription="@string/decription_fondo_de_imagenes"
+            android:src="@drawable/fondo_de_imagenes_de_locales"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toEndOf="@+id/fondo14"
+            app:layout_constraintTop_toBottomOf="@+id/fondo12"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <ImageView
+        android:id="@+id/imagen1"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/kaos"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toTopOf="@+id/fondo" />
+
+        <ImageView
+        android:id="@+id/imagen3"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/vila_bela"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo2"
+        app:layout_constraintEnd_toEndOf="@+id/fondo2"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/fondo2"
+        app:layout_constraintTop_toTopOf="@+id/fondo2"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <ImageView
+        android:id="@+id/imagen4"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/luna_rosa"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo4"
+        app:layout_constraintEnd_toEndOf="@+id/fondo4"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/fondo4"
+        app:layout_constraintTop_toTopOf="@+id/fondo4"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <ImageView
+        android:id="@+id/imagen5"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/tulum"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo5"
+        app:layout_constraintEnd_toEndOf="@+id/fondo5"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/fondo5"
+        app:layout_constraintTop_toTopOf="@+id/fondo5"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <ImageView
+        android:id="@+id/imagen6"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/la_riviera"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo6"
+        app:layout_constraintEnd_toEndOf="@+id/fondo6"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/fondo6"
+        app:layout_constraintTop_toTopOf="@+id/fondo6"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <ImageView
+        android:id="@+id/imagen7"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/mojitos"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo7"
+        app:layout_constraintEnd_toEndOf="@+id/fondo7"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/fondo7"
+        app:layout_constraintTop_toTopOf="@+id/fondo7"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageView
+        android:id="@+id/imagen8"
+        android:layout_width="90dp"
+        android:layout_height="63dp"
+        android:contentDescription="@string/decription_imagenes"
+        android:src="@drawable/premier"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo8"
+        app:layout_constraintEnd_toEndOf="@+id/fondo8"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo8"
+        app:layout_constraintTop_toTopOf="@+id/fondo8"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <ImageView
+        android:id="@+id/imagen9"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/chopao"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo9"
+        app:layout_constraintEnd_toEndOf="@+id/fondo9"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/fondo9"
+        app:layout_constraintTop_toTopOf="@+id/fondo9"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageView
+        android:id="@+id/imagen10"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:contentDescription="@string/decription_imagenes"
+        android:src="@drawable/casa_grande"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo10"
+        app:layout_constraintEnd_toEndOf="@+id/fondo10"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo10"
+        app:layout_constraintTop_toTopOf="@+id/fondo10"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <ImageView
+        android:id="@+id/imagen11"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:src="@drawable/solares"
+        android:contentDescription="@string/decription_imagenes"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo11"
+        app:layout_constraintEnd_toEndOf="@+id/fondo11"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/fondo11"
+        app:layout_constraintTop_toTopOf="@+id/fondo11"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <ImageView
+        android:id="@+id/imagen12"
+        android:layout_width="90dp"
+        android:layout_height="71dp"
+        android:contentDescription="@string/decription_imagenes"
+        android:src="@drawable/hall"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo3"
+        app:layout_constraintEnd_toEndOf="@+id/fondo3"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/fondo3"
+        app:layout_constraintTop_toTopOf="@+id/fondo3"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/text_bart"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_kaos"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo"
+        app:layout_constraintEnd_toEndOf="@+id/fondo"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toTopOf="@+id/fondo"
+        app:layout_constraintVertical_bias="0.768" />
+
+        <TextView
+        android:id="@+id/text_bart3"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="18dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_vila_bela"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo2"
+        app:layout_constraintEnd_toEndOf="@+id/fondo2"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo2"
+        app:layout_constraintTop_toTopOf="@+id/fondo2"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <TextView
+        android:id="@+id/text_bart4"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_luna_rosa"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo4"
+        app:layout_constraintEnd_toEndOf="@+id/fondo4"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo4"
+        app:layout_constraintTop_toTopOf="@+id/fondo4"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <TextView
+        android:id="@+id/text_bart5"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="28dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_tulum"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo5"
+        app:layout_constraintEnd_toEndOf="@+id/fondo5"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo5"
+        app:layout_constraintTop_toTopOf="@+id/fondo5"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/text_bart6"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="18dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_la_rivera"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo6"
+        app:layout_constraintEnd_toEndOf="@+id/fondo6"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo6"
+        app:layout_constraintTop_toTopOf="@+id/fondo6"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/text_bart7"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="26dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_mojitos"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo7"
+        app:layout_constraintEnd_toEndOf="@+id/fondo7"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/fondo7"
+        app:layout_constraintTop_toTopOf="@+id/fondo7"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/text_bart8"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="23dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_premier"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo8"
+        app:layout_constraintEnd_toEndOf="@+id/fondo8"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo8"
+        app:layout_constraintTop_toTopOf="@+id/fondo8"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/text_bart9"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="22dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_chopao"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo9"
+        app:layout_constraintEnd_toEndOf="@+id/fondo9"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo9"
+        app:layout_constraintTop_toTopOf="@+id/fondo9"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <TextView
+        android:id="@+id/text_bart10"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="11dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_casa_grande"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo10"
+        app:layout_constraintEnd_toEndOf="@+id/fondo10"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/fondo10"
+        app:layout_constraintTop_toTopOf="@+id/fondo10"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <TextView
+        android:id="@+id/text_bart11"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="21dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_solares"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo11"
+        app:layout_constraintEnd_toEndOf="@+id/fondo11"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo11"
+        app:layout_constraintTop_toTopOf="@+id/fondo11"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <TextView
+        android:id="@+id/text_bart12"
+        android:layout_width="90dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/font1"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:text="@string/restobar_021_hall"
+        android:textAppearance="@style/style_nombres_de_locales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo3"
+        app:layout_constraintEnd_toEndOf="@+id/fondo3"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/fondo3"
+        app:layout_constraintTop_toTopOf="@+id/fondo3"
+        app:layout_constraintVertical_bias="0.793" />
+
+        <ImageView
+            android:id="@+id/imagen_de_doumo"
+            android:layout_width="90dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/doumo"
+            android:contentDescription="@string/decription_imagenes"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo12"
+            app:layout_constraintEnd_toEndOf="@+id/fondo12"
+            app:layout_constraintStart_toStartOf="@+id/fondo12"
+            app:layout_constraintTop_toTopOf="@+id/fondo12" />
+
+        <TextView
+            android:id="@+id/text_doumo"
+            android:layout_width="90dp"
+            android:layout_height="14dp"
+            android:fontFamily="@font/font1"
+            android:paddingStart="25dp"
+            android:paddingEnd="0dp"
+            android:text="@string/restobar_doumo"
+            android:textAppearance="@style/style_nombres_de_locales"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo12"
+            app:layout_constraintEnd_toEndOf="@+id/fondo12"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="@+id/fondo12"
+            app:layout_constraintTop_toTopOf="@+id/fondo12"
+            app:layout_constraintVertical_bias="0.768" />
+
+        <ImageView
+            android:id="@+id/imagen_de_anemona"
+            android:layout_width="90dp"
+            android:layout_height="71dp"
+            android:src="@drawable/anemona"
+            android:contentDescription="@string/decription_imagenes"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo13"
+            app:layout_constraintEnd_toEndOf="@+id/fondo13"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/fondo13"
+            app:layout_constraintTop_toTopOf="@+id/fondo13"
+            app:layout_constraintVertical_bias="0.313" />
+
+        <TextView
+            android:id="@+id/text_anemona"
+            android:layout_width="90dp"
+            android:layout_height="14dp"
+            android:fontFamily="@font/font1"
+            android:paddingStart="18dp"
+            android:paddingEnd="0dp"
+            android:text="@string/restobar_anemona"
+            android:textAppearance="@style/style_nombres_de_locales"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo13"
+            app:layout_constraintEnd_toEndOf="@+id/fondo13"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/fondo13"
+            app:layout_constraintTop_toTopOf="@+id/fondo13"
+            app:layout_constraintVertical_bias="0.752" />
+
+
+        <ImageView
+            android:id="@+id/imagen_de_rustido"
+            android:layout_width="90dp"
+            android:layout_height="71dp"
+            android:src="@drawable/rustido"
+            android:contentDescription="@string/decription_imagenes"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo14"
+            app:layout_constraintEnd_toEndOf="@+id/fondo14"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/fondo14"
+            app:layout_constraintTop_toTopOf="@+id/fondo14"
+            app:layout_constraintVertical_bias="0.313" />
+
+        <TextView
+            android:id="@+id/text_rustido"
+            android:layout_width="90dp"
+            android:layout_height="14dp"
+            android:fontFamily="@font/font1"
+            android:paddingStart="24dp"
+            android:paddingEnd="0dp"
+            android:text="@string/restobar_rustido"
+            android:textAppearance="@style/style_nombres_de_locales"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo14"
+            app:layout_constraintEnd_toEndOf="@+id/fondo14"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/fondo14"
+            app:layout_constraintTop_toTopOf="@+id/fondo14"
+            app:layout_constraintVertical_bias="0.752" />
+
+        <ImageView
+            android:id="@+id/imagen_de_tarantino"
+            android:layout_width="90dp"
+            android:layout_height="71dp"
+            android:src="@drawable/tarantino"
+            android:contentDescription="@string/decription_imagenes"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo15"
+            app:layout_constraintEnd_toEndOf="@+id/fondo15"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="@+id/fondo15"
+            app:layout_constraintTop_toTopOf="@+id/fondo15"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/text_tarantino"
+            android:layout_width="90dp"
+            android:layout_height="14dp"
+            android:fontFamily="@font/font1"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="@string/restobar_tarantino"
+            android:textAppearance="@style/style_nombres_de_locales"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/fondo15"
+            app:layout_constraintEnd_toEndOf="@+id/fondo15"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="@+id/fondo15"
+            app:layout_constraintTop_toTopOf="@+id/fondo15"
+            app:layout_constraintVertical_bias="0.76" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

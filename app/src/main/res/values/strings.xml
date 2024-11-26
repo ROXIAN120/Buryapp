@@ -1,0 +1,137 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">Buryapp</string>
+
+    <!-- Strings para la pantalla de ingreso con nombre de usuario -->
+    <string name="Button_1">Ingresar</string> <!-- Botón para ingresar -->
+    <string name="textview1">Registrar local</string> <!-- Texto que muestra las opciones de ingreso -->
+    <string name="button_cerrar_sesion">Cerrar sesion</string> <!-- Botón para cerrar sesión -->
+    <string name="TextView">Gmail</string> <!-- Texto para la opción de ingresar con Gmail -->
+    <string name="TextView2">Registrar</string> <!-- Texto para registrar -->
+    <string name="TextView_3">Contraseña</string> <!-- Texto que representa la contraseña -->
+    <string name="Guardar_datos">com.partyapp.gdr</string> <!-- Clave para guardar datos en SharedPreferences -->
+    <string name="Registro">¿No tienes una cuenta?</string> <!-- Pregunta de registro de cuenta -->
+    <string name="Registro2">Registrarte</string> <!-- Texto para registrar una nueva cuenta -->
+    <string name="Registro_nombre">Ingresar datos</string> <!-- Texto para ingresar datos -->
+
+    <!-- Strings para registrar cuenta -->
+    <string name="perfil">PERFIL</string> <!-- Título de perfil -->
+    <string name="Informacion_personal">Informacion personal</string> <!-- Información personal del usuario -->
+
+    <!-- Strings para la vista de navegación (Navigation View) -->
+    <string name="title_activity_main4">MainActivity4</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string> <!-- Texto para abrir el menú de navegación -->
+    <string name="navigation_drawer_close">Close navigation drawer</string> <!-- Texto para cerrar el menú de navegación -->
+    <string name="nav_header_title">Android Studio</string> <!-- Título del encabezado del menú de navegación -->
+    <string name="nav_header_subtitle">android.studio@android.com</string> <!-- Subtítulo del encabezado -->
+    <string name="nav_header_desc">Navigation header</string> <!-- Descripción del encabezado -->
+    <string name="action_settings">Settings</string> <!-- Configuración -->
+
+    <!-- Strings para los fragmentos de la vista de navegación -->
+    <string name="menu_bar"></string> <!-- Fragmento para el menú de bar -->
+    <string name="menu_restobar"></string> <!-- Fragmento para el menú de restobar -->
+    <string name="menu_discoteca"></string> <!-- Fragmento para el menú de discoteca -->
+    <string name="TextView_doumo"></string> <!-- Texto para el fragmento de Doumo -->
+
+    <!-- Strings para los ítems del menú de la vista de navegación -->
+    <string name="menu_datos_personales">Datos personales</string> <!-- Ítem del menú para datos personales -->
+    <string name="menu_ayuda_online">Ayuda online</string> <!-- Ítem del menú para ayuda online -->
+    <string name="menu_configuracion">Configuracion</string> <!-- Ítem del menú para configuración -->
+    <string name="menu_notificaciones">Notificaciones</string> <!-- Ítem del menú para notificaciones -->
+    <string name="menu_Informacion_legal">Informacion legal</string> <!-- Ítem del menú para información legal -->
+    <string name="menu_Lugares_favoritos">Lugares favoritos</string> <!-- Ítem del menú para lugares favoritos -->
+    <string name="menu_invitar_amigos">Invitar amigos</string> <!-- Ítem del menú para invitar amigos -->
+    <string name="menu_cerrar_sesion">Cerra sesion</string> <!-- Ítem del menú para cerrar sesión -->
+
+    <!-- Strings para descripciones de imágenes -->
+    <string name="decription_fondo_de_imagenes">Fondo de imagenes</string> <!-- Descripción de fondo de imágenes -->
+    <string name="decription_imagenes">Fondo de imagenes</string> <!-- Descripción de fondo de imágenes -->
+
+    <!-- Strings para los nombres de restobars -->
+    <string name="restobar_kaos">KAOS</string>
+    <string name="restobar_biblioteca">LA BIBLIOTECA</string>
+    <string name="restobar_vila_bela">VILA BELA</string>
+    <string name="restobar_luna_rosa">LUNA ROSA</string>
+    <string name="restobar_tulum">TULUM</string>
+    <string name="restobar_la_rivera">LA RIVERA</string>
+    <string name="restobar_mojitos">MOJITOS</string>
+    <string name="restobar_premier">PREMIER</string>
+    <string name="restobar_chopao">CHOPAO</string>
+    <string name="restobar_casa_grande">CASA GRANDE</string>
+    <string name="restobar_solares">SOLARES</string>
+    <string name="restobar_021_hall">021 HALL</string>
+    <string name="restobar_doumo">DOUMO</string>
+    <string name="restobar_anemona">ANEMONA</string>
+    <string name="restobar_rustido">RÙSTIDO</string>
+    <string name="restobar_tarantino">TARANTINO</string>
+
+    <!-- Strings para los nombres de bares -->
+    <string name="bar_malavita">MALAVITA</string>
+    <string name="bar_singapur">SINGAPUR</string>
+    <string name="bar_duda">DUDA</string>
+    <string name="bar_kuka">KUKA</string>
+    <string name="bar_cancun">CANCUN</string>
+    <string name="bar_woods">WOODS</string>
+    <string name="bar_havana">HAVANA BEACH</string>
+
+    <!-- Strings para los nombres de discotecas -->
+    <string name="discoteca_bahia">BAHÍA</string>
+    <string name="discoteca_vermont">VERMONT</string>
+
+    <!-- Strings para los títulos -->
+    <string name="titulo_bar">BAR</string>
+    <string name="titulo_resto_bar">RESTO BAR</string>
+    <string name="titulo_discoteca">DISCOTECA</string>
+
+    <!-- Strings para descripciones de imágenes de fondo -->
+    <string name="decription_fondo_de_bares">fondo de bares</string>
+    <string name="description_logo">Descripcion de logo</string> <!-- Descripción del logo -->
+
+    <!-- Strings para el menú de texto -->
+    <string name="TextView_menu">MENU</string> <!-- Texto para el menú -->
+
+    <!-- Strings para la dirección de Malavita -->
+    <string name="TextView_direccion_malavita"> Calle Independencia # 171 entre Ingavi y Suárez de Figueroa (A media cuadra de la Manzana UNO) Santa Cruz de la Sierra, Bolivia. 6R78+QX Santa Cruz de la Sierra </string>
+
+    <!-- Strings para los títulos del menú de Malavita -->
+    <string name="Titulo_malavita">MALAVITA</string>
+    <string name="Titulo_proximos_eventos">PROXIMOS EVENTOS</string>
+    <string name="Button_eventos">EVENTOS</string>
+    <string name="TextView_shots_tragos">SHOTS Y TRAGOS</string>
+    <string name="TextView_vasos_y_cerbeza">VASOS Y CERVEZAS</string>
+    <string name="TextView_baldes">BALDES</string>
+    <string name="TextView_botellas">BOTELLAS</string>
+    <string name="TextView_sin_alcohol">SIN ALCOHOL</string>
+    <string name="TextView_precio">PRECIO</string>
+
+    <!-- Strings para los títulos del menú de Vermont -->
+    <string name="Titulo_vermont">VERMONT</string>
+
+    <!-- Strings para la descripción del menú de Malavita -->
+    <string name="ImagenView_description_fondo_de_malavita">fondo de bares</string>
+
+    <!-- Strings para la descripción de fondo y número de mesa -->
+    <string name="description_fondo_de_mesa">Fondo de mesa</string>
+    <string name="description_mesa">Numero de mesa</string>
+
+    <!-- Strings para el botón de reserva de Malavita -->
+    <string name="button_bares">Reservar</string>
+
+    <!-- Strings para realizar reservas por WhatsApp -->
+    <string name="TextView_Nombre_Apellido">Nombre y Apellido :</string>
+    <string name="TextView_Numero_de_personas">Numero de personas :</string>
+    <string name="TextView_fecha">Fecha :</string>
+    <string name="TextView_hora">Hora :</string>
+    <string name="punto">.</string>
+    <string name="Button_enviar">Enviar reserva</string>
+
+    <!-- String para el ID del cliente para el registro de Google -->
+    <string name="default_web_client_id">tu_client_id_aqui</string>
+
+    <!-- String para el hint del RecyclerView -->
+    <string name="Barra_de_busqueda">Buscar...</string>
+
+    <!-- Strings para la pantalla de horario -->
+    <string name="titulo_horario">HORARIO</string>
+    <string name="button_x">x</string>
+</resources>

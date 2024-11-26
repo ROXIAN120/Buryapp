@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plantilla_bury_app">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/fondo_de_mesa_1"
+        android:layout_width="377dp"
+        android:layout_height="361dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description_fondo_de_mesa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/fondo_para_mesas" />
+
+
+    <ImageView
+        android:id="@+id/fondo_de_mesa_2"
+        android:layout_width="377dp"
+        android:layout_height="361dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description_fondo_de_mesa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fondo_para_mesas" />
+
+    <ImageView
+        android:id="@+id/fondo_de_mesa_3"
+        android:layout_width="377dp"
+        android:layout_height="361dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/description_fondo_de_mesa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fondo_para_mesas" />
+
+
+
+    <ImageView
+        android:id="@+id/mesa1"
+        android:layout_width="280dp"
+        android:layout_height="165dp"
+        android:contentDescription="@string/description_mesa"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/mesa1_malavita" />
+
+    <ImageView
+        android:id="@+id/mesa2"
+        android:layout_width="280dp"
+        android:layout_height="165dp"
+        android:contentDescription="@string/description_mesa"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/mesa2_malavita" />
+
+
+    <ImageView
+        android:id="@+id/mesa3"
+        android:layout_width="280dp"
+        android:layout_height="165dp"
+        android:contentDescription="@string/description_mesa"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mesa3_malavita" />
+
+    <TextView
+        android:id="@+id/textview_mesa1"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:paddingTop="5dp"
+        android:text="@string/punto"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/apariencia_de_item_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/textview_mesa2"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:paddingTop="5dp"
+        android:text="@string/punto"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/apariencia_de_item_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/textview_mesa3"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:paddingTop="5dp"
+        android:text="@string/punto"
+        android:textColor="#FFFFFF"
+        android:textAppearance="@style/apariencia_de_item_text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="191dp"
+        android:layout_height="56dp"
+        android:text="@string/button_bares"
+        android:textAppearance="@style/apariencia_de_item_text2"
+        android:background="@drawable/button_3"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_1"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="191dp"
+        android:layout_height="56dp"
+        android:background="@drawable/button_3"
+        android:text="@string/button_bares"
+        android:textAppearance="@style/apariencia_de_item_text2"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_2"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/Buttoon_3"
+        android:layout_width="191dp"
+        android:layout_height="56dp"
+        android:text="@string/button_bares"
+        android:textAppearance="@style/apariencia_de_item_text2"
+        android:background="@drawable/button_3"
+        app:layout_constraintBottom_toBottomOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintEnd_toEndOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintTop_toTopOf="@+id/fondo_de_mesa_3"
+        app:layout_constraintVertical_bias="0.918" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
